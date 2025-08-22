@@ -496,38 +496,14 @@ wp.date.setSettings( {"l10n":{"locale":"en_US","months":["January","February","M
 <script src="content/warning.min.js" id="wp-warning-js"></script>
 <script src="content/components.min.js" id="wp-components-js"></script>
 <script src="content/plugins.min.js" id="wp-plugins-js"></script>
-<script src="content/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
-<script src="content/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
 <script id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.31.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"nested-elements":true,"e_element_cache":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true},"urls":{"assets":"http:\/\/drmariadacosta.com.au\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"","uploadUrl":""},"nonces":{"floatingButtonsClickTracking":"8363b52c21"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":14,"title":"Contact%20%E2%80%93%20DrMariadaCosta","excerpt":"","featuredImage":false},"user":{"roles":["administrator"]}};
 </script>
 <script src="content/frontend.min(1).js" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
 <script src="content/hoverintent-js.min.js" id="hoverintent-js-js"></script>
-<script id="admin-bar-js-before">
-( function() {
-				function wpforms_admin_bar_menu_init() {
-					var template = document.getElementById( 'tmpl-wpforms-admin-menubar-data' ),
-						notifications = document.getElementById( 'wp-admin-bar-wpforms-notifications' );
 
-					if ( ! template ) {
-						return;
-					}
-
-					if ( ! notifications ) {
-						var menu = document.getElementById( 'wp-admin-bar-wpforms-menu-default' );
-
-						if ( ! menu ) {
-							return;
-						}
-
-						menu.insertAdjacentHTML( 'afterBegin', template.innerHTML );
-					} else {
-						notifications.insertAdjacentHTML( 'afterend', template.innerHTML );
-					}
-				};
-				document.addEventListener( 'DOMContentLoaded', wpforms_admin_bar_menu_init );
-			}() );
-</script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
