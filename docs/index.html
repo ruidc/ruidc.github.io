@@ -126,14 +126,22 @@ var latepoint_helper = {"route_action":"latepoint_route_call","response_status":
     margin: 0;
   }
 
-  /* Prevent image aspect-ratio distortion on phone portrait */
-    @media (max-width: 767px) {
-        .elementor-485 .elementor-element.elementor-element-76e12fd img {
-            width: 100%;
-            height: auto !important; /* override the fixed 451px height */
-            display: block;
-        }
-    }
+/* ADD: Keep image aspect ratio on iPad portrait and below */
+@media (max-width: 1024px) {
+  .elementor-485 .elementor-element.elementor-element-76e12fd img {
+    height: auto !important; /* override the fixed 451px height */
+  }
+}
+
+/* ADD: Safety for small phones */
+@media (max-width: 767px) {
+  .elementor-485 .elementor-element.elementor-element-76e12fd img {
+    width: 100%;
+    height: auto !important;
+    display: block;
+  }
+}
+
 
 </style>
 
